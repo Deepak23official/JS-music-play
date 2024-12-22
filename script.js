@@ -177,7 +177,7 @@ let songs = [
   }
 
   function playSong(){
-     audio.load()
+     // audio.load()
     audio.play()
     play_Song = true 
     play.innerHTML = `<i class="fa-solid fa-pause text-white text-lg"></i>`
