@@ -1,4 +1,11 @@
 let songs = [
+     { 
+      SongTitle: "Hayyoda Lyrics- Jawan", 
+      ArtistName: "Anirudh", 
+      src:"Songs/Hayyoda Lyrics- Jawan _ Tamil Lyrics _ Anirudh _Priya Mali _(M4A_128K).m4a", 
+      img: "Images/hyoda.jpeg",
+      time:"03:10"
+    },
     { 
       SongTitle: "7 Aum Arivu - Mun Andhi", 
       ArtistName: "Harris Jayaraj", 
@@ -40,13 +47,6 @@ let songs = [
       src:"Songs/Ethir Neechal(M4A_128K).m4a", 
       img: "Images/Ethir.jpeg",
       time:"04:31"
-    },
-    { 
-      SongTitle: "Hayyoda Lyrics- Jawan", 
-      ArtistName: "Anirudh", 
-      src:"Songs/Hayyoda Lyrics- Jawan _ Tamil Lyrics _ Anirudh _Priya Mali _(M4A_128K).m4a", 
-      img: "Images/hyoda.jpeg",
-      time:"03:10"
     },
     { 
       SongTitle: "Hey Minnale", 
