@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo7PZX96AiqTO8HvCWbKQOxWMUB-A7Xbskmw&s">
+  <!-- Add Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+  <div class="max-w-sm w-full bg-black rounded-lg shadow-md p-6 space-y-6">
+    <!-- Album Cover -->
+    <div class="flex justify-center">
+      <img id="img"
+        src="" 
+        alt="Album Art" 
+        class="w-48 h-48 rounded-lg shadow-lg"
+      >
+    </div>
+    
+    <!-- Song Info -->
+    <div class="text-center">
+      <h1 id="title" class="text-xl font-bold">Song Title</h1>
+      <p id="Artist" class="text-gray-400">Artist Name</p>
+    </div>
+    
+    <!-- Progress Bar -->
+    <div>
+      <input id="range"
+        type="range" 
+        value="0" 
+        min="0"
+        max="100" 
+        class="w-full h-1 bg-gray-700 rounded-lg cursor-pointer"
+      >
+      <div class="flex justify-between text-sm text-gray-400 mt-1">
+        <span><span id="timer">00</span>:<span id="timer1">00</span></span>
+        <span id="S_Duration">03:45</span> <!-- Song Duration -->
+      </div>
+    </div>
+    
+    <!-- Controls -->
+    <div class="flex justify-around items-center">
+      <button onclick="Prv()" class="px-4 py-2 rounded-full bg-gray-800 hover:bg-gray-600 focus:outline-none">
+        <i id="prv" class="fas fa-step-backward text-white text-lg"></i>
+      </button>
+
+      <button onclick="Play()" id="play" class="w-[70px] px-6 py-5 rounded-full bg-red-600 hover:bg-green-500">
+        <i  class="fa-solid fa-play text-white text-lg"></i>
+      </button>
+
+      <button onclick="Next()" id="nxt" class="py-2 px-4 rounded-full bg-gray-800 hover:bg-gray-600 focus:outline-none">
+        <i class="fas fa-step-forward text-white text-lg"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
